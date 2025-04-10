@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+     font-family: "Roboto", sans-serif;
+     font-family: 16px;
+}
+
+img{
+    max-width: 100%;
+}
+
+.contenedor{
+    width: 90%;
+    
+    max-width: 1500px;
+    margin: auto;
+    overflow: hidden;
+}
+/**-----header----*/
+header{
+    width: 100%;
+    background-image: url(../imagenes/invernadero.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    min-height: 60vh;
+    padding: 80px 0;
+}
+
+header .contenedor{
+    position: relative;
+    height: 300px;
+
+}
+
+header .menú {
+    width: 100%;
+    text-align: right;
+
+
+}
+
+header .menú a{
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-weight: 300;
+    display: inline-block;
+    margin: 5px 10px;
+    text-decoration: none;
+    position: relative;
+
+}
+
+header .menú a:hover {
+    text-decoration: underline;
+    color: rgb(255, 115, 0);
+}
+
+header .titulo-conteiner{
+width: 100%;
+position: absolute;
+top: 30%;
+margin-top: -40px;
+}
+
+header .titulo-conteiner .nombre{
+    font-size: 60px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+
+header .titulo-conteiner .nombre span{
+    font-weight: 600;
+    color: rgb(240, 94, 41);
+}
+
+header .titulo-conteiner h3{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    background-color:rgba(255, 115, 0, 0.514);
+    font-style: italic;
+    display: inline;
+    border-radius: 50px;
+}
+/**FIN HEADER*/
+/**inicio del main*/
+
+.main .acerca-de article{
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgb(161, 238, 161);
+    position: relative;
+    z-index: 1;
+    float: left;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+}
+
+.main .acerca-de article h3{
+    font-size: 25px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.main .acerca-de article p{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+/**FIN ACERCA DE*/
+/**INICIO BENEFICIO*/
+.main .beneficios{
+    
+    background: url(../imagenes/tomates.avif);
+   height: 100%;
+
+
+}
+
+.main .beneficios h3{
+    font-size: 25px;
+    padding: 10px;
+    
+
+
+}
+.main .beneficios .bene{
+    
+   width: 150px;
+   justify-content: center;
+   display: flex;
+   margin-left: 550px;
+   position: relative;
+   
+   
+   
+}
+
+.main .beneficios .bene-txt{
+    font-size: 16px;
+    display: flex;
+    padding: 10px 10px;
+    justify-content: center;
+    color:rgb(0, 0, 0);
+    background-color:brown;
+    border-radius: 20px;
+    overflow: hidden;
+}
+/*INICIO PRODUCTO*/
+.main .Productos article{
+    border:2px solid #000; 
+background: rgba(128, 128, 128, 0.747); 
+padding: 10px; 
+overflow: hidden;
+width: 40%; 
+float: left;
+
+
+}
+
+.main .Productos .venta{
+    border-bottom: 4px dotted rgb(0, 0, 0);
+}
+
+.main .Productos .producto-titulo{
+    font-size: 35px;
+}
+
+.main .Productos .producto-titulo h3{
+    padding: 20px;
+    background-color: rgb(223, 102, 32);
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    width: 100%;
+    margin: 10px 0;
+}
+ 
+.main .Productos .cultivo{
+    font-size: 25px;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.main .Productos .cultivo-txt{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: space-between;
+}
+/*FIN PRODUCTO*/
+/*INICIO UBI*/
+.main .ubicacion {
+    width: 100%;
+/*margin-left: 564px;*/
+
+background: url(../imagenes/productos.jpg);
+
+}
+
+.main .ubicacion h3{
+    font-size: 25px;
+    font-weight: 550;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(235, 108, 34);
+
+}
+/*fin de ubi*/
+
+.main .contact-conteiner{
+    padding: 60px 500px;
+    background: url(../imagenes/productos.jpg);
+
+}
+
+.main .contact-conteiner h3{
+    font-size: 25px;
+    text-decoration:underline;
+}
+
+.main .contact-contenido{
+    background-color: rgb(233, 98, 49);
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+input{
+    padding: 10px 10px;
+    background-color: rgb(241, 235, 231);
+    border: 0;
+    border-radius: 19px;
+    outline: none;
+    margin-right: 10px;
+    color: #000;
+    font-size: 18px;
+}
+
+::placeholder{
+    color: #000;
+    font-size: 15px;
+}
+
+.btm-3{
+    background-color: rgb(184, 181, 181);
+    cursor: pointer;
+    margin: 0;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    background: url(../imagenes/productos.jpg);
+    width: 100%;
+    display: inline-block;
+
+}
+
+footer .equipo h3{
+    font-size: 26px;
+}
+
+footer .equipo ul{
+font-size: 20px;
+    display: flex;
+}
+footer .equipo ul li{
+    margin-top: 10px;
+    margin-right: 200px;
+    background-color: rgb(233, 98, 49);
+    border-radius: 30px;
+}
+
+footer .equipo p{
+padding: 15px 0 0 ;
+    justify-content: center;
+    font-size: 17px;
+    font-weight: 550;
+    display: flex;
+}
